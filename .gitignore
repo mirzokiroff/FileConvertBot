@@ -128,4 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/*
-.env
+.envcover/
+.pybuilder/
+.pdm.toml
+.pytype/
+cython_debug/
