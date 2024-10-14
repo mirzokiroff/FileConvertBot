@@ -1,5 +1,6 @@
 import asyncpg
 from aiogram import types
+from aiogram.types import ReplyKeyboardRemove
 
 from data.config import ADMINS
 from loader import dp, db, bot
@@ -27,7 +28,9 @@ async def bot_start(message: types.Message):
            f"Bazada {count} ta foydalanuvchi bor.")
     await bot.send_message(chat_id=ADMINS[0], text=msg)
     await message.reply(
-        f"Assalomu Alaykum! {message.from_user.full_name}\nFile Converter botiga xush kelibsiz! \n\n\n"
-        f"📌Bot Dasturchisi haqida:\n\n@mirzokirov1\n@mirzokiroff_dev\n@mirzokiroff_usefulcodes\n@mirzokiroff_chat")
-    await message.reply("Iltimos, fayl yuboring va bir zumda faylni boshqa formatga o'tkazing.")
+        f"Assalomu Alaykum! {message.from_user.full_name}\nFile Converter botiga xush kelibsiz!\n\n"
+        f"Siz bu Bot bilan fayllarni bir formatdan boshqasiga o'zgartirishingiz mumkin\n\n"
+        f"📷 Rasmlar, 🗂 Fayllar va boshqa formatdagi fayllar qo'llab quvvatlanadi\n\n\n"
+        f"Konvertatsiya qilish uchun menga faylni yuboring yoki qo'shimcha ma'lumot olish uchun /help yozing.",
+        reply_markup=ReplyKeyboardRemove())
     await FormState.waiting_for_file.set()

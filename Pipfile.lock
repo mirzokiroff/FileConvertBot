@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "edadaef54d8088954c75e0a7986a2691737a4472b315e2f364c3fa6cb07ed209"
+            "sha256": "028d6ad2024b5aab8065ae603b82805aef3058ba4afff6e3db272b2fee8d257c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -118,6 +118,15 @@
             "markers": "python_version >= '3.6'",
             "version": "==3.8.6"
         },
+        "aiomysql": {
+            "hashes": [
+                "sha256:558b9c26d580d08b8c5fd1be23c5231ce3aeff2dadad989540fee740253deb67",
+                "sha256:b7c26da0daf23a5ec5e0b133c03d20657276e4eae9b73e040b72787f6f6ade0a"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==0.2.0"
+        },
         "aiosignal": {
             "hashes": [
                 "sha256:54cd96e15e1649b75d6c87526a6ff0b6c1b0dd3459f43d9ca11d48c339b68cfc",
@@ -125,6 +134,15 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==1.3.1"
+        },
+        "aiosqlite": {
+            "hashes": [
+                "sha256:36a1deaca0cac40ebe32aac9977a6e2bbc7f5189f23f4a54d5908986729e5bd6",
+                "sha256:6d35c8c256637f4672f843c31021464090805bf925385ac39473fb16eaaca3d7"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.20.0"
         },
         "async-timeout": {
             "hashes": [
@@ -643,6 +661,14 @@
             "markers": "python_version >= '3.8'",
             "version": "==0.2.0"
         },
+        "pymysql": {
+            "hashes": [
+                "sha256:4de15da4c61dc132f4fb9ab763063e693d521a80fd0e87943b9a453dd4c19d6c",
+                "sha256:e127611aaf2b417403c60bf4dc570124aeb4a57f5f37b8e95ae399a42f904cd0"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==1.1.1"
+        },
         "python-dotenv": {
             "hashes": [
                 "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca",
@@ -663,7 +689,7 @@
                 "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
                 "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
             ],
-            "markers": "python_version < '3.11'",
+            "markers": "python_version >= '3.8'",
             "version": "==4.12.2"
         },
         "yarl": {
